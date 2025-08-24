@@ -12,8 +12,8 @@ type Category = {
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white font-sans py-10 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+    <footer className="bg-black text-white font-sans py-10 px-4 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 ">
         {/* Logo & Contact */}
         <div className="space-y-4">
           <div>

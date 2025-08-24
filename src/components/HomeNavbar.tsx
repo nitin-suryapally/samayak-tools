@@ -4,7 +4,6 @@ import { useState } from 'react'
 import NavLink from './NavLink'
 import CategoryDropdown from './CategoryDropdown'
 import MobileMenu from './MobileMenu'
-import { UserButton } from '@clerk/nextjs'
 import type { NavItem, Category } from '../types/nav'
 import Image from 'next/image'
 import { logo } from "@/index"

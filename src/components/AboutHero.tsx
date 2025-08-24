@@ -18,7 +18,7 @@ export default function AboutHero() {
             />
           </div>
           {/* Our Expertise title directly under image, aligned left on desktop */}
-          
+
         </div>
         {/* Right Content */}
         <div className="w-full md:w-1/2 flex flex-col justify-center mt-6 md:mt-0">
@@ -28,12 +28,8 @@ export default function AboutHero() {
           <h2 className="font-black text-2xl md:text-3xl mb-4 leading-tight">
             WE ALWAYS MAKE<br className="hidden md:block" /> THE BEST
           </h2>
-          <p className="text-gray-700 mb-3 text-base md:text-lg">
-            Arou At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.
-          </p>
-          <p className="text-gray-700 text-base md:text-lg">
-            Arou At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.
-          </p>
+          <p className="text-gray-700 mb-3 text-base md:text-lg"> With three decades of hands-on expertise and a catalog of 10,000+ professional products, we engineer solutions that deliver consistent, repeatable results. From gypsum-bonded investments for gold, silver, brass and bronze to high-precision alloys and Orotig laser welders, every item is selected for purity, stability, and finish quality. </p>
+          <p className="text-gray-700 text-base md:text-lg"> As the exclusive distributor for Pandora Alloys and Certus Investment Powders, we help manufacturers achieve sharper detail, smoother casting surfaces, and faster post-processing. Whether scaling production or perfecting intricate designs, our materials and machines are built for precision—and trusted by professionals. </p>
         </div>
       </div>
     </section>

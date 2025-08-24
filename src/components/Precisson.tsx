@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { gradient, precissionImage } from "../index"; 
+import { gradient, precissionImage } from "../index";
 
 export default function Precision() {
   return (
@@ -26,7 +26,7 @@ export default function Precision() {
           </h1>
           {/* Subtitle */}
           <p className="mb-7 text-gray-500 text-base md:text-lg max-w-lg">
-            Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
+            With three decades of industry experience, we supply professionals with over 10,000 high-quality products, from advanced casting powders to precision laser welders. Our commitment to excellence ensures every tool and material is engineered for superior performance, empowering you to achieve impeccable results with confidence
           </p>
           {/* Button */}
           <Link

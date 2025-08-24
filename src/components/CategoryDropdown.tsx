@@ -1,4 +1,3 @@
-
 'use client'
 
 import Link from 'next/link'
@@ -27,6 +26,7 @@ export default function CategoryDropdown({ categories }: Props) {
               <Link
                 href={cat.href}
                 className="block px-4 py-2 hover:bg-gray-100"
+                onClick={() => setOpen(!open)}
               >
                 {cat.name}
               </Link>

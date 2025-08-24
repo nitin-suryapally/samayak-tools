@@ -10,7 +10,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 
 export default function Home() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <HeroCarousel />
       <BrandPartnersSection />
       <Precision />

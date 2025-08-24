@@ -35,7 +35,7 @@ export default function CategoryProductSection({ data }: Props) {
       </div>
 
       {/* Second Row */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-start">
+      <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-16 items-start">
         <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
           <CustomizableCard {...data.customizable[0]} />
         </div>

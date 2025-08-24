@@ -49,9 +49,7 @@ export default function ExpertiseSection() {
 
             {/* Bottom gray text */}
             <div className="max-w-5xl mx-auto px-4 py-10">
-                <p className="text-center text-gray-700 text-xs md:text-base font-medium leading-relaxed">
-                    Arou At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.  Arou At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien, Suspendisse Aliquam.
-                </p>
+               <p className="text-center text-gray-700 text-xs md:text-base font-medium leading-relaxed"> Our team supports the full jewelry workflow—casting powders, master alloys, injection waxes, polishing compounds, buffs and brushes, micromotors, and laser welding—so operations run cleaner and quicker. 10+ years serving modern manufacturers, 300+ satisfied clients, 17+ certifications and awards, and 500+ completed projects reflect our commitment to reliability and finish excellence. From stone-in-place casting to platinum and stainless high-temperature work, we provide the right materials and machines to raise yield, reduce defects, and elevate the final mirror polish. </p>
             </div>
         </section>
     );
