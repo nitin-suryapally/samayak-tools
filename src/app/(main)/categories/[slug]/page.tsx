@@ -35,8 +35,8 @@ export default async function CategoryPage({
   }
 
   // Redirect for dedicated routes
-  if (slug === "wax") redirect("/categories/wax");
-  if (slug === "alloy") redirect("/categories/alloy");
+  if (slug === "wax") redirect("/categories/Wax");
+  if (slug === "alloy") redirect("/categories/alloys");
 
   const data = categoryDetailsData[slug];
   if (!data) return <div>No product data found</div>;
