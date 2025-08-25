@@ -2,9 +2,10 @@ import AlloyCard from '@/components/AlloyCard'
 import { alloyData } from '@/data'
 import React from 'react'
 
-const Alloy = () => {
-    return (
 
+
+const AlloyPage = () => {
+    return (
         <section className="max-w-7xl mx-auto px-2 py-10 md:py-16">
             <h1 className="text-3xl md:text-4xl font-black text-center mb-12">ALLOY</h1>
             {alloyData.map((item, idx) => (
@@ -18,8 +19,7 @@ const Alloy = () => {
                 />
             ))}
         </section>
-
     )
 }
 
-export default Alloy
+export default AlloyPage

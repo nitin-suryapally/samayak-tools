@@ -1,7 +1,8 @@
 import { categories, categoryDetailsData } from "@/data";
 import CategoryProductSection from "@/components/CategoryProductSection";
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+import WaxPagee from "@/components/WaxPage";
+import AlloyPage from "@/components/AlloyPage";
 
 // Correctly await params in generateMetadata
 export async function generateMetadata({
@@ -35,8 +36,8 @@ export default async function CategoryPage({
   }
 
   // Redirect for dedicated routes
-  // if (slug === "Wax") redirect("/categories/Wax");
-  if (slug === "alloy") redirect("/categories/alloys");
+  if (slug === "wax") return <WaxPagee />
+  if (slug === "alloy") <AlloyPage />
 
   const data = categoryDetailsData[slug];
   if (!data) return <div>No product data found</div>;

@@ -34,8 +34,8 @@ export const categories: Category[] = [
     slug: "casting-powder",
     href: "/categories/casting-powder",
   },
-  { name: "Wax", slug: "Wax", href: "/categories/Wax" },
-  { name: "Alloy", slug: "alloy", href: "/categories/alloys" },
+  { name: "Wax", slug: "wax", href: "/categories/wax" },
+  { name: "Alloy", slug: "alloy", href: "/categories/alloy" },
   { name: "Machine", slug: "machine", href: "/categories/machine" },
   { name: "Burs", slug: "burs", href: "/categories/burs" },
   {
