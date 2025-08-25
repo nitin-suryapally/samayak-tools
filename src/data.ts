@@ -194,7 +194,7 @@ export const waxFlexData: WaxFlexItem[] = [
 export type FeatureItem = {
   label: string;
   desc: string;
-  iconColor: string; // e.g., "red" | "black"
+  iconColor: string; // "red" | "blue" | ...
 };
 
 export type FeatureBlock = {
@@ -214,6 +214,8 @@ export type CategoryDetail = {
   features: FeatureBlock[];
   customizable: CustomizableBlock[];
 };
+
+
 
 export const directors = [
   {

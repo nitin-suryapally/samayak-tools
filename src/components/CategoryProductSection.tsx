@@ -1,61 +1,53 @@
-import React from "react";
-import FeatureCard from "./FeatureCard";
+// components/CategoryProductSection.tsx
+import ProductRow from "./ProductRow";
 import CustomizableCard from "./CustomizableCard";
-import Image from "next/image";
 import { CategoryDetail } from "@/data";
 
-type Props = {
-  data: CategoryDetail;
-};
+
+type Props = { data: CategoryDetail };
 
 export default function CategoryProductSection({ data }: Props) {
   if (!data) return <div className="text-center py-16">No product found</div>;
 
+  const featureBlock = data.features?.[0];
+  const items = featureBlock?.items ?? [];
+
+  const rows = items.map((it, idx) => ({
+    image: data.images[idx] ?? data.images[data.images.length - 1] ?? "/placeholders/category.jpg",
+    title: it.label,
+    desc: it.desc,
+  }));
+
   return (
-    <section className="max-w-7xl mx-auto px-2 py-12 flex flex-col gap-24">
-      <h1 className="text-2xl md:text-4xl font-black text-center mb-10">{data.name}</h1>
+    <section className="max-w-7xl mx-auto px-3 py-12 flex flex-col gap-16 md:gap-24">
+      <h1 className="text-2xl md:text-4xl font-black text-center">{data.name}</h1>
 
-      {/* First Row */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-16 items-start">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-full max-w-md aspect-square bg-black flex items-center justify-center">
-            <Image
-              src={data.images[0]}
-              alt={data.name}
-              width={420}
-              height={420}
-              className="object-cover "
-              priority
-            />
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 mt-8 md:mt-0 flex items-center">
-          <FeatureCard {...data.features[0]} />
-        </div>
+      {/* Product rows */}
+      <div className="flex flex-col gap-16 md:gap-24">
+        {rows.map((r, i) => (
+          <ProductRow
+            key={`${r.title}-${i}`}
+            image={r.image}
+            title={r.title}
+            desc={r.desc}
+            index={i}
+            categoryName={data.name}
+          />
+        ))}
       </div>
 
-      {/* Second Row */}
-      <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-16 items-start">
-        <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <CustomizableCard {...data.customizable[0]} />
+      {/* Customizable blocks */}
+      {data.customizable?.length ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-2">
+          {data.customizable.map((c, i) => (
+            <CustomizableCard key={i} {...c} />
+          ))}
         </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-full max-w-md aspect-square bg-black flex items-center justify-center">
-            <Image
-              src={data.images[1]}
-              alt={data.name}
-              width={520}
-              height={520}
-              className="object-cover w-full h-full"
-              priority
-            />
-          </div>
-        </div>
-      </div>
+      ) : null}
 
-      {/* CTA button */}
-      <div className="w-full flex justify-center mt-10">
-        <button className="bg-black text-white rounded px-8 py-3 hover:bg-gray-900 transition font-semibold shadow-lg text-lg">
+      {/* CTA */}
+      <div className="w-full flex justify-center mt-8">
+        <button className="bg-black text-white rounded px-8 py-3 hover:bg-gray-900 transition font-semibold text-lg shadow">
           To Enquire About The Product Contact Us
         </button>
       </div>
